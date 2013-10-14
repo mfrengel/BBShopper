@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F76F94A180B8C8900FD10BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F949180B8C8900FD10BA /* UIKit.framework */; };
+		6F76F94C180B8C8900FD10BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F94B180B8C8900FD10BA /* Foundation.framework */; };
+		6F76F94E180B8C8900FD10BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F94D180B8C8900FD10BA /* CoreGraphics.framework */; };
+		6F76F954180B8C8900FD10BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F76F952180B8C8900FD10BA /* InfoPlist.strings */; };
+		6F76F956180B8C8900FD10BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F76F955180B8C8900FD10BA /* main.m */; };
+		6F76F95C180B8C8900FD10BA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F76F95B180B8C8900FD10BA /* Default.png */; };
+		6F76F95E180B8C8900FD10BA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F76F95D180B8C8900FD10BA /* Default@2x.png */; };
+		6F76F960180B8C8900FD10BA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F76F95F180B8C8900FD10BA /* Default-568h@2x.png */; };
+		6F803541180B949F00738FE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F80353E180B949F00738FE9 /* AppDelegate.m */; };
+		6F803542180B949F00738FE9 /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F803540180B949F00738FE9 /* CategoryVC.m */; };
+		6F803545180B94AD00738FE9 /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F803544180B94AD00738FE9 /* CategoryVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6F76F946180B8C8900FD10BA /* BBShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F76F949180B8C8900FD10BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6F76F94B180B8C8900FD10BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6F76F94D180B8C8900FD10BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6F76F951180B8C8900FD10BA /* BBShopper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BBShopper-Info.plist"; sourceTree = "<group>"; };
+		6F76F953180B8C8900FD10BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6F76F955180B8C8900FD10BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F76F957180B8C8900FD10BA /* BBShopper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BBShopper-Prefix.pch"; sourceTree = "<group>"; };
+		6F76F95B180B8C8900FD10BA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6F76F95D180B8C8900FD10BA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6F76F95F180B8C8900FD10BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6F80353D180B949F00738FE9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6F80353E180B949F00738FE9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6F80353F180B949F00738FE9 /* CategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryVC.h; sourceTree = "<group>"; };
+		6F803540180B949F00738FE9 /* CategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryVC.m; sourceTree = "<group>"; };
+		6F803544180B94AD00738FE9 /* CategoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F76F943180B8C8900FD10BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F76F94A180B8C8900FD10BA /* UIKit.framework in Frameworks */,
+				6F76F94C180B8C8900FD10BA /* Foundation.framework in Frameworks */,
+				6F76F94E180B8C8900FD10BA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F76F93D180B8C8900FD10BA = {
+			isa = PBXGroup;
+			children = (
+				6F76F94F180B8C8900FD10BA /* BBShopper */,
+				6F76F948180B8C8900FD10BA /* Frameworks */,
+				6F76F947180B8C8900FD10BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F76F947180B8C8900FD10BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F76F946180B8C8900FD10BA /* BBShopper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F76F948180B8C8900FD10BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F76F949180B8C8900FD10BA /* UIKit.framework */,
+				6F76F94B180B8C8900FD10BA /* Foundation.framework */,
+				6F76F94D180B8C8900FD10BA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F76F94F180B8C8900FD10BA /* BBShopper */ = {
+			isa = PBXGroup;
+			children = (
+				6F803543180B94AD00738FE9 /* Views */,
+				6F80353C180B949F00738FE9 /* Controllers */,
+				6F76F950180B8C8900FD10BA /* Supporting Files */,
+			);
+			path = BBShopper;
+			sourceTree = "<group>";
+		};
+		6F76F950180B8C8900FD10BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F76F951180B8C8900FD10BA /* BBShopper-Info.plist */,
+				6F76F952180B8C8900FD10BA /* InfoPlist.strings */,
+				6F76F955180B8C8900FD10BA /* main.m */,
+				6F76F957180B8C8900FD10BA /* BBShopper-Prefix.pch */,
+				6F76F95B180B8C8900FD10BA /* Default.png */,
+				6F76F95D180B8C8900FD10BA /* Default@2x.png */,
+				6F76F95F180B8C8900FD10BA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F80353C180B949F00738FE9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F80353D180B949F00738FE9 /* AppDelegate.h */,
+				6F80353E180B949F00738FE9 /* AppDelegate.m */,
+				6F80353F180B949F00738FE9 /* CategoryVC.h */,
+				6F803540180B949F00738FE9 /* CategoryVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6F803543180B94AD00738FE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F803544180B94AD00738FE9 /* CategoryVC.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F76F945180B8C8900FD10BA /* BBShopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F76F96F180B8C8900FD10BA /* Build configuration list for PBXNativeTarget "BBShopper" */;
+			buildPhases = (
+				6F76F942180B8C8900FD10BA /* Sources */,
+				6F76F943180B8C8900FD10BA /* Frameworks */,
+				6F76F944180B8C8900FD10BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BBShopper;
+			productName = BBShopper;
+			productReference = 6F76F946180B8C8900FD10BA /* BBShopper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F76F93E180B8C8900FD10BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = MFrengel;
+			};
+			buildConfigurationList = 6F76F941180B8C8900FD10BA /* Build configuration list for PBXProject "BBShopper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6F76F93D180B8C8900FD10BA;
+			productRefGroup = 6F76F947180B8C8900FD10BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F76F945180B8C8900FD10BA /* BBShopper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F76F944180B8C8900FD10BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F76F954180B8C8900FD10BA /* InfoPlist.strings in Resources */,
+				6F76F95C180B8C8900FD10BA /* Default.png in Resources */,
+				6F76F95E180B8C8900FD10BA /* Default@2x.png in Resources */,
+				6F76F960180B8C8900FD10BA /* Default-568h@2x.png in Resources */,
+				6F803545180B94AD00738FE9 /* CategoryVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F76F942180B8C8900FD10BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F76F956180B8C8900FD10BA /* main.m in Sources */,
+				6F803541180B949F00738FE9 /* AppDelegate.m in Sources */,
+				6F803542180B949F00738FE9 /* CategoryVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6F76F952180B8C8900FD10BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F76F953180B8C8900FD10BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F76F96D180B8C8900FD10BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6F76F96E180B8C8900FD10BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F76F970180B8C8900FD10BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBShopper/BBShopper-Prefix.pch";
+				INFOPLIST_FILE = "BBShopper/BBShopper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6F76F971180B8C8900FD10BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBShopper/BBShopper-Prefix.pch";
+				INFOPLIST_FILE = "BBShopper/BBShopper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F76F941180B8C8900FD10BA /* Build configuration list for PBXProject "BBShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F76F96D180B8C8900FD10BA /* Debug */,
+				6F76F96E180B8C8900FD10BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F76F96F180B8C8900FD10BA /* Build configuration list for PBXNativeTarget "BBShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F76F970180B8C8900FD10BA /* Debug */,
+				6F76F971180B8C8900FD10BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F76F93E180B8C8900FD10BA /* Project object */;
+}
