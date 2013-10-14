@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F24B0C0180BBCDD00148CF0 /* libCereal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F24B0BD180BBCC600148CF0 /* libCereal.a */; };
+		6F24B0C3180BBD8E00148CF0 /* ContainerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24B0C2180BBD8E00148CF0 /* ContainerConfiguration.m */; };
 		6F76F94A180B8C8900FD10BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F949180B8C8900FD10BA /* UIKit.framework */; };
 		6F76F94C180B8C8900FD10BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F94B180B8C8900FD10BA /* Foundation.framework */; };
 		6F76F94E180B8C8900FD10BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F94D180B8C8900FD10BA /* CoreGraphics.framework */; };
@@ -18,9 +20,51 @@
 		6F803541180B949F00738FE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F80353E180B949F00738FE9 /* AppDelegate.m */; };
 		6F803542180B949F00738FE9 /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F803540180B949F00738FE9 /* CategoryVC.m */; };
 		6F803545180B94AD00738FE9 /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F803544180B94AD00738FE9 /* CategoryVC.xib */; };
+		6FA8C011180BB7EB0072C1F2 /* libCoreMeta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7F619C180BB07C00870B06 /* libCoreMeta.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6F24B0BC180BBCC600148CF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F24B0B8180BBCC500148CF0 /* Cereal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C6B4CF81747CB080023ADCF;
+			remoteInfo = Cereal;
+		};
+		6F24B0BE180BBCD900148CF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F24B0B8180BBCC500148CF0 /* Cereal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C6B4CF71747CB080023ADCF;
+			remoteInfo = Cereal;
+		};
+		6F7F619B180BB07C00870B06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7F6196180BB07C00870B06 /* CoreMeta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C14303615B4A04500A9C1B9;
+			remoteInfo = CoreMeta;
+		};
+		6F7F619D180BB07C00870B06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7F6196180BB07C00870B06 /* CoreMeta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C14304615B4A04500A9C1B9;
+			remoteInfo = CoreMetaTests;
+		};
+		6F7F61AB180BB11E00870B06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7F6196180BB07C00870B06 /* CoreMeta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C14303515B4A04500A9C1B9;
+			remoteInfo = CoreMeta;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6F24B0B8180BBCC500148CF0 /* Cereal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cereal.xcodeproj; path = Cereal/Cereal.xcodeproj; sourceTree = "<group>"; };
+		6F24B0C1180BBD8E00148CF0 /* ContainerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerConfiguration.h; sourceTree = "<group>"; };
+		6F24B0C2180BBD8E00148CF0 /* ContainerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerConfiguration.m; sourceTree = "<group>"; };
 		6F76F946180B8C8900FD10BA /* BBShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F76F949180B8C8900FD10BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F76F94B180B8C8900FD10BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +76,7 @@
 		6F76F95B180B8C8900FD10BA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6F76F95D180B8C8900FD10BA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6F76F95F180B8C8900FD10BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6F7F6196180BB07C00870B06 /* CoreMeta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreMeta.xcodeproj; path = CoreMeta/CoreMeta/CoreMeta.xcodeproj; sourceTree = "<group>"; };
 		6F80353D180B949F00738FE9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F80353E180B949F00738FE9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6F80353F180B949F00738FE9 /* CategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryVC.h; sourceTree = "<group>"; };
@@ -44,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F24B0C0180BBCDD00148CF0 /* libCereal.a in Frameworks */,
+				6FA8C011180BB7EB0072C1F2 /* libCoreMeta.a in Frameworks */,
 				6F76F94A180B8C8900FD10BA /* UIKit.framework in Frameworks */,
 				6F76F94C180B8C8900FD10BA /* Foundation.framework in Frameworks */,
 				6F76F94E180B8C8900FD10BA /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F24B0B9180BBCC500148CF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F24B0BD180BBCC600148CF0 /* libCereal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6F76F93D180B8C8900FD10BA = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +128,8 @@
 		6F76F948180B8C8900FD10BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F24B0B8180BBCC500148CF0 /* Cereal.xcodeproj */,
+				6F7F6196180BB07C00870B06 /* CoreMeta.xcodeproj */,
 				6F76F949180B8C8900FD10BA /* UIKit.framework */,
 				6F76F94B180B8C8900FD10BA /* Foundation.framework */,
 				6F76F94D180B8C8900FD10BA /* CoreGraphics.framework */,
@@ -83,6 +140,7 @@
 		6F76F94F180B8C8900FD10BA /* BBShopper */ = {
 			isa = PBXGroup;
 			children = (
+				6FC02EB4180BBAC700829162 /* Services */,
 				6F803543180B94AD00738FE9 /* Views */,
 				6F80353C180B949F00738FE9 /* Controllers */,
 				6F76F950180B8C8900FD10BA /* Supporting Files */,
@@ -104,6 +162,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6F7F6197180BB07C00870B06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F7F619C180BB07C00870B06 /* libCoreMeta.a */,
+				6F7F619E180BB07C00870B06 /* CoreMetaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6F80353C180B949F00738FE9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +190,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6FC02EB4180BBAC700829162 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6F24B0C1180BBD8E00148CF0 /* ContainerConfiguration.h */,
+				6F24B0C2180BBD8E00148CF0 /* ContainerConfiguration.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +213,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				6F24B0BF180BBCD900148CF0 /* PBXTargetDependency */,
+				6F7F61AC180BB11E00870B06 /* PBXTargetDependency */,
 			);
 			name = BBShopper;
 			productName = BBShopper;
@@ -162,12 +240,46 @@
 			mainGroup = 6F76F93D180B8C8900FD10BA;
 			productRefGroup = 6F76F947180B8C8900FD10BA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6F24B0B9180BBCC500148CF0 /* Products */;
+					ProjectRef = 6F24B0B8180BBCC500148CF0 /* Cereal.xcodeproj */;
+				},
+				{
+					ProductGroup = 6F7F6197180BB07C00870B06 /* Products */;
+					ProjectRef = 6F7F6196180BB07C00870B06 /* CoreMeta.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6F76F945180B8C8900FD10BA /* BBShopper */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6F24B0BD180BBCC600148CF0 /* libCereal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCereal.a;
+			remoteRef = 6F24B0BC180BBCC600148CF0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6F7F619C180BB07C00870B06 /* libCoreMeta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCoreMeta.a;
+			remoteRef = 6F7F619B180BB07C00870B06 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6F7F619E180BB07C00870B06 /* CoreMetaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoreMetaTests.octest;
+			remoteRef = 6F7F619D180BB07C00870B06 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6F76F944180B8C8900FD10BA /* Resources */ = {
@@ -192,10 +304,24 @@
 				6F76F956180B8C8900FD10BA /* main.m in Sources */,
 				6F803541180B949F00738FE9 /* AppDelegate.m in Sources */,
 				6F803542180B949F00738FE9 /* CategoryVC.m in Sources */,
+				6F24B0C3180BBD8E00148CF0 /* ContainerConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F24B0BF180BBCD900148CF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cereal;
+			targetProxy = 6F24B0BE180BBCD900148CF0 /* PBXContainerItemProxy */;
+		};
+		6F7F61AC180BB11E00870B06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoreMeta;
+			targetProxy = 6F7F61AB180BB11E00870B06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6F76F952180B8C8900FD10BA /* InfoPlist.strings */ = {
@@ -268,9 +394,16 @@
 		6F76F970180B8C8900FD10BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BBShopper/BBShopper-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)\"/**";
 				INFOPLIST_FILE = "BBShopper/BBShopper-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -279,9 +412,16 @@
 		6F76F971180B8C8900FD10BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BBShopper/BBShopper-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)\"/**";
 				INFOPLIST_FILE = "BBShopper/BBShopper-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

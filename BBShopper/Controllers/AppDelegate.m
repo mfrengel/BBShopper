@@ -7,14 +7,16 @@
 //
 #import "AppDelegate.h"
 #import "CategoryVC.h"
+#import "ContainerConfiguration.h"
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    CategoryVC* vc = [[CategoryVC alloc] init];
+    [[ContainerConfiguration object] configure];
+    
+    CategoryVC* vc = [CategoryVC object];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
     
     self.window.rootViewController = self.navigationController;
