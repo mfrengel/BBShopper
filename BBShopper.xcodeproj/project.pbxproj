@@ -20,6 +20,10 @@
 		6F1C5888180CE753008D02C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1C5887180CE753008D02C2 /* SystemConfiguration.framework */; };
 		6F1C588A180CE8A3008D02C2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1C5889180CE8A3008D02C2 /* Security.framework */; };
 		6F1C588E180CF58E008D02C2 /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C588D180CF58E008D02C2 /* AFAppDotNetAPIClient.m */; };
+		6F24A25C180E2F26009B0F80 /* CategoryRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24A25B180E2F26009B0F80 /* CategoryRepository.m */; };
+		6F24A25F180E319B009B0F80 /* APIBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24A25E180E319B009B0F80 /* APIBase.m */; };
+		6F24A262180E32A8009B0F80 /* APICategoryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24A261180E32A8009B0F80 /* APICategoryService.m */; };
+		6F24A266180E3700009B0F80 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24A265180E3700009B0F80 /* Category.m */; };
 		6F24B0C0180BBCDD00148CF0 /* libCereal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F24B0BD180BBCC600148CF0 /* libCereal.a */; };
 		6F24B0C3180BBD8E00148CF0 /* ContainerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24B0C2180BBD8E00148CF0 /* ContainerConfiguration.m */; };
 		6F76F94A180B8C8900FD10BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F949180B8C8900FD10BA /* UIKit.framework */; };
@@ -99,6 +103,14 @@
 		6F1C5889180CE8A3008D02C2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6F1C588C180CF58E008D02C2 /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
 		6F1C588D180CF58E008D02C2 /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		6F24A25A180E2F26009B0F80 /* CategoryRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryRepository.h; sourceTree = "<group>"; };
+		6F24A25B180E2F26009B0F80 /* CategoryRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryRepository.m; sourceTree = "<group>"; };
+		6F24A25D180E319B009B0F80 /* APIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIBase.h; sourceTree = "<group>"; };
+		6F24A25E180E319B009B0F80 /* APIBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIBase.m; sourceTree = "<group>"; };
+		6F24A260180E32A8009B0F80 /* APICategoryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICategoryService.h; sourceTree = "<group>"; };
+		6F24A261180E32A8009B0F80 /* APICategoryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICategoryService.m; sourceTree = "<group>"; };
+		6F24A264180E3700009B0F80 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		6F24A265180E3700009B0F80 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
 		6F24B0B8180BBCC500148CF0 /* Cereal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cereal.xcodeproj; path = Cereal/Cereal.xcodeproj; sourceTree = "<group>"; };
 		6F24B0C1180BBD8E00148CF0 /* ContainerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerConfiguration.h; sourceTree = "<group>"; };
 		6F24B0C2180BBD8E00148CF0 /* ContainerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerConfiguration.m; sourceTree = "<group>"; };
@@ -171,8 +183,30 @@
 			children = (
 				6F1C588C180CF58E008D02C2 /* AFAppDotNetAPIClient.h */,
 				6F1C588D180CF58E008D02C2 /* AFAppDotNetAPIClient.m */,
+				6F24A25D180E319B009B0F80 /* APIBase.h */,
+				6F24A25E180E319B009B0F80 /* APIBase.m */,
+				6F24A260180E32A8009B0F80 /* APICategoryService.h */,
+				6F24A261180E32A8009B0F80 /* APICategoryService.m */,
 			);
 			path = Web;
+			sourceTree = "<group>";
+		};
+		6F24A258180E2E5C009B0F80 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6F24A25A180E2F26009B0F80 /* CategoryRepository.h */,
+				6F24A25B180E2F26009B0F80 /* CategoryRepository.m */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6F24A263180E36E4009B0F80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F24A264180E3700009B0F80 /* Category.h */,
+				6F24A265180E3700009B0F80 /* Category.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		6F24B0B9180BBCC500148CF0 /* Products */ = {
@@ -186,9 +220,6 @@
 		6F76F93D180B8C8900FD10BA = {
 			isa = PBXGroup;
 			children = (
-				6F1C5889180CE8A3008D02C2 /* Security.framework */,
-				6F1C5887180CE753008D02C2 /* SystemConfiguration.framework */,
-				6F1C5885180CE72E008D02C2 /* MobileCoreServices.framework */,
 				6F76F94F180B8C8900FD10BA /* BBShopper */,
 				6F76F948180B8C8900FD10BA /* Frameworks */,
 				6F76F947180B8C8900FD10BA /* Products */,
@@ -206,12 +237,15 @@
 		6F76F948180B8C8900FD10BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F76F94D180B8C8900FD10BA /* CoreGraphics.framework */,
+				6F1C5889180CE8A3008D02C2 /* Security.framework */,
+				6F1C5887180CE753008D02C2 /* SystemConfiguration.framework */,
+				6F1C5885180CE72E008D02C2 /* MobileCoreServices.framework */,
+				6F76F949180B8C8900FD10BA /* UIKit.framework */,
+				6F76F94B180B8C8900FD10BA /* Foundation.framework */,
 				6F1C5867180CE6B0008D02C2 /* AFNetworking */,
 				6F24B0B8180BBCC500148CF0 /* Cereal.xcodeproj */,
 				6F7F6196180BB07C00870B06 /* CoreMeta.xcodeproj */,
-				6F76F949180B8C8900FD10BA /* UIKit.framework */,
-				6F76F94B180B8C8900FD10BA /* Foundation.framework */,
-				6F76F94D180B8C8900FD10BA /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				6FC02EB4180BBAC700829162 /* Services */,
+				6F24A258180E2E5C009B0F80 /* Repositories */,
+				6F24A263180E36E4009B0F80 /* Models */,
 				6F803543180B94AD00738FE9 /* Views */,
 				6F80353C180B949F00738FE9 /* Controllers */,
 				6F76F950180B8C8900FD10BA /* Supporting Files */,
@@ -395,6 +431,10 @@
 				6F1C5882180CE6B0008D02C2 /* AFXMLRequestOperation.m in Sources */,
 				6F1C5883180CE6B0008D02C2 /* UIImageView+AFNetworking.m in Sources */,
 				6F1C588E180CF58E008D02C2 /* AFAppDotNetAPIClient.m in Sources */,
+				6F24A25C180E2F26009B0F80 /* CategoryRepository.m in Sources */,
+				6F24A25F180E319B009B0F80 /* APIBase.m in Sources */,
+				6F24A262180E32A8009B0F80 /* APICategoryService.m in Sources */,
+				6F24A266180E3700009B0F80 /* Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
