@@ -59,7 +59,7 @@
     __weak typeof(UITableViewCell*) weakCell = cell;
     NSURL* url = [NSURL URLWithString:[prod.image.thumbs valueForKey:@"small"]];
     [cell.imageView setImageWithURLRequest:[NSURLRequest requestWithURL:url]
-                          placeholderImage:nil
+                          placeholderImage:[UIImage imageNamed:@"profile-image-placeholder.png"]
                                    success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
                                        weakCell.imageView.image = image;
                                        [weakCell layoutSubviews];

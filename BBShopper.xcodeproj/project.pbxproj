@@ -44,6 +44,7 @@
 		6FC74DF7180E722D00C3B61D /* APIProductService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DF6180E722D00C3B61D /* APIProductService.m */; };
 		6FC74DFB180E791900C3B61D /* ProductListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DF9180E791900C3B61D /* ProductListVC.m */; };
 		6FC74DFE180E797E00C3B61D /* ProductListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FC74DFD180E797E00C3B61D /* ProductListVC.xib */; };
+		6FC74E05180E85FD00C3B61D /* profile-image-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC74E04180E85FD00C3B61D /* profile-image-placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,7 @@
 		6FC74DF8180E791900C3B61D /* ProductListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListVC.h; sourceTree = "<group>"; };
 		6FC74DF9180E791900C3B61D /* ProductListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListVC.m; sourceTree = "<group>"; };
 		6FC74DFD180E797E00C3B61D /* ProductListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListVC.xib; sourceTree = "<group>"; };
+		6FC74E04180E85FD00C3B61D /* profile-image-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-image-placeholder.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 		6F76F94F180B8C8900FD10BA /* BBShopper */ = {
 			isa = PBXGroup;
 			children = (
+				6FC74E03180E85FD00C3B61D /* Images */,
 				6FC02EB4180BBAC700829162 /* Services */,
 				6F24A258180E2E5C009B0F80 /* Repositories */,
 				6F24A263180E36E4009B0F80 /* Models */,
@@ -341,6 +344,15 @@
 				6F24B0C2180BBD8E00148CF0 /* ContainerConfiguration.m */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		6FC74E03180E85FD00C3B61D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6FC74E04180E85FD00C3B61D /* profile-image-placeholder.png */,
+			);
+			name = Images;
+			path = Resources/Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +448,7 @@
 				6F76F960180B8C8900FD10BA /* Default-568h@2x.png in Resources */,
 				6F803545180B94AD00738FE9 /* CategoryVC.xib in Resources */,
 				6FC74DFE180E797E00C3B61D /* ProductListVC.xib in Resources */,
+				6FC74E05180E85FD00C3B61D /* profile-image-placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
