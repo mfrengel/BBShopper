@@ -18,6 +18,7 @@
 #import "CategoryRepository.h"
 
 #import "CategoryVC.h"
+#import "ProductListVC.h"
 
 @implementation ContainerConfiguration
 
@@ -39,6 +40,7 @@
     
     // View controllers
     [container registerClass:[CategoryVC class]];
+    [container registerClass:[ProductListVC class]];
 }
 
 @end

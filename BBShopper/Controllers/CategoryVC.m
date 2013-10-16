@@ -8,7 +8,7 @@
 #import "CategoryVC.h"
 #import "APICategoryService.h"
 #import "CategoryRepository.h"
-
+#import "ProductListVC.h"
 
 @interface CategoryVC()<UITableViewDataSource,UITableViewDelegate,APICategoryServiceDelegate> {
     NSArray* _items;
@@ -70,7 +70,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
     else if (self.mode == CategoryModeSub) {
-        // TODO: push to product list vc
+        ProductListVC* vc = [ProductListVC object];
+        vc.category = [_items objectAtIndex:indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
