@@ -8,6 +8,7 @@
 
 #import "ProductListVC.h"
 #import "APIProductService.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface ProductListVC ()<UITableViewDataSource,UITableViewDelegate,APIProductServiceDelegate> {
     NSArray* _products;
@@ -38,22 +39,42 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"Cell2";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
+        cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:15];
+        cell.textLabel.adjustsFontSizeToFitWidth = YES;
+        cell.textLabel.textColor = [UIColor darkTextColor];
+        
+        cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
+        cell.detailTextLabel.textColor = [UIColor blueColor];
     }
     
     Product* prod = [_products objectAtIndex:indexPath.row];
     
-    // TODO: show price & image
+    __weak typeof(UITableViewCell*) weakCell = cell;
+    NSURL* url = [NSURL URLWithString:[prod.image.thumbs valueForKey:@"small"]];
+    [cell.imageView setImageWithURLRequest:[NSURLRequest requestWithURL:url]
+                          placeholderImage:nil
+                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                       weakCell.imageView.image = image;
+                                       [weakCell layoutSubviews];
+                                   }
+                                   failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+                                       return;
+                                   }
+     ];
     
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
-    cell.textLabel.adjustsFontSizeToFitWidth = YES;
-    cell.textLabel.textColor = [UIColor darkTextColor];
     cell.textLabel.text = prod.title;
+    
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    NSString* price = [prod.price valueForKey:@"value"];
+    cell.detailTextLabel.text = [formatter stringFromNumber: [NSNumber numberWithDouble:[price doubleValue]]];
     
     return cell;
 }
