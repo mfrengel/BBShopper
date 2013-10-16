@@ -69,6 +69,9 @@
         vc.category = [_items objectAtIndex:indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
     }
+    else if (self.mode == CategoryModeSub) {
+        // TODO: push to product list vc
+    }
 }
 
 #pragma mark - APICategoryServiceDelegate

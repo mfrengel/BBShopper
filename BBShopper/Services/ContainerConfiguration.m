@@ -13,6 +13,7 @@
 #import "JsonCerealizer.h"
 #import "AFAppDotNetAPIClient.h"
 #import "APICategoryService.h"
+#import "APIProductService.h"
 
 #import "CategoryRepository.h"
 
@@ -31,6 +32,7 @@
     
     [container registerClass:[AFAppDotNetAPIClient class]];
     [container registerClass:[APICategoryService class]];
+    [container registerClass:[APIProductService class]];
     
     // Repositories
     [container registerClass:[CategoryRepository class] cache:YES];

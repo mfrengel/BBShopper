@@ -41,6 +41,7 @@
 		6FC74DEE180E6D2400C3B61D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DED180E6D2400C3B61D /* Product.m */; };
 		6FC74DF1180E6ED400C3B61D /* ProductPromo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DF0180E6ED400C3B61D /* ProductPromo.m */; };
 		6FC74DF4180E6FA100C3B61D /* ProductImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DF3180E6FA100C3B61D /* ProductImage.m */; };
+		6FC74DF7180E722D00C3B61D /* APIProductService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DF6180E722D00C3B61D /* APIProductService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,8 @@
 		6FC74DF0180E6ED400C3B61D /* ProductPromo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductPromo.m; sourceTree = "<group>"; };
 		6FC74DF2180E6FA100C3B61D /* ProductImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductImage.h; sourceTree = "<group>"; };
 		6FC74DF3180E6FA100C3B61D /* ProductImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductImage.m; sourceTree = "<group>"; };
+		6FC74DF5180E722D00C3B61D /* APIProductService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIProductService.h; sourceTree = "<group>"; };
+		6FC74DF6180E722D00C3B61D /* APIProductService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIProductService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +199,8 @@
 				6F24A25E180E319B009B0F80 /* APIBase.m */,
 				6F24A260180E32A8009B0F80 /* APICategoryService.h */,
 				6F24A261180E32A8009B0F80 /* APICategoryService.m */,
+				6FC74DF5180E722D00C3B61D /* APIProductService.h */,
+				6FC74DF6180E722D00C3B61D /* APIProductService.m */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				6FC74DEE180E6D2400C3B61D /* Product.m in Sources */,
 				6FC74DF1180E6ED400C3B61D /* ProductPromo.m in Sources */,
 				6FC74DF4180E6FA100C3B61D /* ProductImage.m in Sources */,
+				6FC74DF7180E722D00C3B61D /* APIProductService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
