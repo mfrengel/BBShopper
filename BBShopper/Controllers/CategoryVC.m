@@ -25,7 +25,7 @@
     [super viewDidLoad];
     
     if (self.mode == CategoryModeAll)
-        self.title = NSLocalizedString(@"All Categories", nil);
+        self.title = NSLocalizedString(@"Categories", nil);
     else
         self.title = NSLocalizedString(self.category.title, nil);
     
