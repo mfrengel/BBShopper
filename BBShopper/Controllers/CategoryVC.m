@@ -11,10 +11,10 @@
 
 
 @interface CategoryVC()<UITableViewDataSource,UITableViewDelegate,APICategoryServiceDelegate> {
+    NSArray* _items;
 }
 
 @property (strong) APICategoryService* api;
-@property (strong) CategoryRepository* repo;
 
 @end
 
@@ -24,12 +24,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = NSLocalizedString(@"Categories", nil);
+    if (self.mode == CategoryModeAll)
+        self.title = NSLocalizedString(@"All Categories", nil);
+    else
+        self.title = NSLocalizedString(self.category.title, nil);
     
     self.api.delegate = self;
-    [self.api loadCategories];
+    [self load];
 }
-
 
 #pragma mark - TableView Datasource/Delegate methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -37,7 +39,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.repo.items.count;
+    return _items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -49,13 +51,7 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 
-    Category* cat = [self.repo.items objectAtIndex:indexPath.row];
-    
-    if ([cat isKindOfClass:[Category class]])
-        NSLog(@"itsa category");
-    if ([cat isKindOfClass:[NSDictionary class]])
-        NSLog(@"itsa dict");
-    
+    Category* cat = [_items objectAtIndex:indexPath.row];
     
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:17];
     cell.textLabel.textColor = [UIColor darkTextColor];
@@ -66,10 +62,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (self.mode == CategoryModeAll) {
+        CategoryVC* vc = [CategoryVC object];
+        vc.mode = CategoryModeSub;
+        vc.category = [_items objectAtIndex:indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 #pragma mark - APICategoryServiceDelegate
 -(void)categoryLoadSuccess:(NSArray *)categories {
+    _items = categories;
     [self refresh];
 }
 
@@ -82,6 +86,13 @@
 }
 
 #pragma mark - Private
+-(void) load {
+    if (self.mode == CategoryModeAll)
+        [self.api loadCategories];
+    else if (self.mode == CategoryModeSub)
+        [self.api loadSubCategories:self.category];
+}
+
 -(void) refresh {
     [self.tableView reloadData];
 }

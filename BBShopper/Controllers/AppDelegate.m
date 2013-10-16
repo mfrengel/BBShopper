@@ -17,6 +17,7 @@
     [[ContainerConfiguration object] configure];
     
     CategoryVC* vc = [CategoryVC object];
+    vc.mode = CategoryModeAll;
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
     
     self.window.rootViewController = self.navigationController;

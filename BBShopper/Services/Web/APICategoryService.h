@@ -7,6 +7,7 @@
 //
 
 #import "APIBase.h"
+#import "Category.h"
 
 @protocol APICategoryServiceDelegate <NSObject>
 @optional
@@ -19,5 +20,6 @@
 @property (weak) id<APICategoryServiceDelegate> delegate;
 
 -(void) loadCategories;
+-(void) loadSubCategories:(Category*)category;
 
 @end

@@ -14,5 +14,6 @@
 @property (strong) NSString* id;
 @property (strong) NSString* href;
 @property (strong) NSString* title;
+@property (strong) NSDictionary* _bb_image;
 
 @end

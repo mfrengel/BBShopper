@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Category.h"
 
-@class DetailViewController;
+typedef enum {
+    CategoryModeAll,
+    CategoryModeSub
+} CategoryMode;
 
 @interface CategoryVC : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property CategoryMode mode;
+@property (strong) Category* category;
 
 @end
