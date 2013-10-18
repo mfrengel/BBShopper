@@ -337,9 +337,9 @@
 		6F803543180B94AD00738FE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6F3A52181810E6B100BF5996 /* ProductDetailVC.xib */,
 				6F803544180B94AD00738FE9 /* CategoryVC.xib */,
 				6FC74DFD180E797E00C3B61D /* ProductListVC.xib */,
+				6F3A52181810E6B100BF5996 /* ProductDetailVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";

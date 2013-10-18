@@ -10,4 +10,11 @@
 
 @interface ProductDetailVC : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *prodDescription;
+@property (weak, nonatomic) IBOutlet UIImageView *prodImage;
+@property (weak, nonatomic) IBOutlet UILabel *prodPrice;
+@property (weak, nonatomic) IBOutlet UILabel *prodPromo;
+
+- (IBAction)addToCart:(id)sender;
+
 @end
