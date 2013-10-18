@@ -26,6 +26,8 @@
 		6F24A266180E3700009B0F80 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24A265180E3700009B0F80 /* Category.m */; };
 		6F24B0C0180BBCDD00148CF0 /* libCereal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F24B0BD180BBCC600148CF0 /* libCereal.a */; };
 		6F24B0C3180BBD8E00148CF0 /* ContainerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24B0C2180BBD8E00148CF0 /* ContainerConfiguration.m */; };
+		6F3A52151810E69000BF5996 /* ProductDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A52131810E69000BF5996 /* ProductDetailVC.m */; };
+		6F3A52191810E6B100BF5996 /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A52181810E6B100BF5996 /* ProductDetailVC.xib */; };
 		6F76F94A180B8C8900FD10BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F949180B8C8900FD10BA /* UIKit.framework */; };
 		6F76F94C180B8C8900FD10BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F94B180B8C8900FD10BA /* Foundation.framework */; };
 		6F76F94E180B8C8900FD10BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76F94D180B8C8900FD10BA /* CoreGraphics.framework */; };
@@ -121,6 +123,9 @@
 		6F24B0B8180BBCC500148CF0 /* Cereal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cereal.xcodeproj; path = Cereal/Cereal.xcodeproj; sourceTree = "<group>"; };
 		6F24B0C1180BBD8E00148CF0 /* ContainerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerConfiguration.h; sourceTree = "<group>"; };
 		6F24B0C2180BBD8E00148CF0 /* ContainerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerConfiguration.m; sourceTree = "<group>"; };
+		6F3A52121810E69000BF5996 /* ProductDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailVC.h; sourceTree = "<group>"; };
+		6F3A52131810E69000BF5996 /* ProductDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailVC.m; sourceTree = "<group>"; };
+		6F3A52181810E6B100BF5996 /* ProductDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailVC.xib; sourceTree = "<group>"; };
 		6F76F946180B8C8900FD10BA /* BBShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F76F949180B8C8900FD10BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F76F94B180B8C8900FD10BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -323,6 +328,8 @@
 				6F803540180B949F00738FE9 /* CategoryVC.m */,
 				6FC74DF8180E791900C3B61D /* ProductListVC.h */,
 				6FC74DF9180E791900C3B61D /* ProductListVC.m */,
+				6F3A52121810E69000BF5996 /* ProductDetailVC.h */,
+				6F3A52131810E69000BF5996 /* ProductDetailVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -330,6 +337,7 @@
 		6F803543180B94AD00738FE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6F3A52181810E6B100BF5996 /* ProductDetailVC.xib */,
 				6F803544180B94AD00738FE9 /* CategoryVC.xib */,
 				6FC74DFD180E797E00C3B61D /* ProductListVC.xib */,
 			);
@@ -449,6 +457,7 @@
 				6F803545180B94AD00738FE9 /* CategoryVC.xib in Resources */,
 				6FC74DFE180E797E00C3B61D /* ProductListVC.xib in Resources */,
 				6FC74E05180E85FD00C3B61D /* profile-image-placeholder.png in Resources */,
+				6F3A52191810E6B100BF5996 /* ProductDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +491,7 @@
 				6FC74DF4180E6FA100C3B61D /* ProductImage.m in Sources */,
 				6FC74DF7180E722D00C3B61D /* APIProductService.m in Sources */,
 				6FC74DFB180E791900C3B61D /* ProductListVC.m in Sources */,
+				6F3A52151810E69000BF5996 /* ProductDetailVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
