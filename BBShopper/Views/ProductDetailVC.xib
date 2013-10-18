@@ -59,9 +59,10 @@
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
-						<float key="IBUIMinimumFontSize">17</float>
+						<float key="IBUIMinimumFontSize">12</float>
 						<int key="IBUINumberOfLines">0</int>
 						<int key="IBUITextAlignment">1</int>
+						<int key="IBUILineBreakMode">0</int>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<string key="name">HelveticaNeue</string>
 							<string key="family">Helvetica Neue</string>
@@ -318,7 +319,7 @@
 								<float key="scoringTypeFloat">24</float>
 								<int key="contentType">2</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="259030273">
+							<object class="IBNSLayoutConstraint" id="5472199">
 								<reference key="firstItem" ref="828515177"/>
 								<int key="firstAttribute">3</int>
 								<int key="relation">0</int>
@@ -735,7 +736,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">143</int>
-						<reference key="object" ref="259030273"/>
+						<reference key="object" ref="5472199"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -756,7 +757,7 @@
 					<reference ref="996237208"/>
 					<reference ref="627281981"/>
 					<reference ref="220868382"/>
-					<reference ref="259030273"/>
+					<reference ref="5472199"/>
 					<reference ref="909843482"/>
 					<reference ref="832210267"/>
 				</array>

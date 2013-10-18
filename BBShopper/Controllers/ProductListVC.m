@@ -9,6 +9,7 @@
 #import "ProductListVC.h"
 #import "APIProductService.h"
 #import "UIImageView+AFNetworking.h"
+#import "ProductDetailVC.h"
 
 @interface ProductListVC ()<UITableViewDataSource,UITableViewDelegate,APIProductServiceDelegate> {
     NSArray* _products;
@@ -47,7 +48,7 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
         cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:15];
-        cell.textLabel.adjustsFontSizeToFitWidth = YES;
+        //cell.textLabel.adjustsFontSizeToFitWidth = YES;
         cell.textLabel.textColor = [UIColor darkTextColor];
         
         cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
@@ -81,6 +82,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    ProductDetailVC* vc = [ProductDetailVC object];
+    vc.product = [_products objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - APIProductServiceDelegate
