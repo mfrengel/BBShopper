@@ -8,6 +8,7 @@
 
 #import "ProductDetailVC.h"
 #import "UIImageView+AFNetworking.h"
+#import "CartVC.h"
 
 @interface ProductDetailVC ()
 
@@ -40,5 +41,20 @@
 
 - (IBAction)addToCart:(id)sender {
     NSLog(@"TODO: Add this item to cart");
+    
+    // TODO:
+    // 1. Call add to cart API
+    // 2. Response to delegate success/fail message
+    // 3. Upon success, show the CartVC
+    
+    [self AddToCartSuccess];
 }
+
+#pragma mark - Cart delegate
+-(void) AddToCartSuccess {
+    CartVC* vc = [CartVC object];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
 @end

@@ -20,6 +20,7 @@
 #import "CategoryVC.h"
 #import "ProductListVC.h"
 #import "ProductDetailVC.h"
+#import "CartVC.h"
 
 @implementation ContainerConfiguration
 
@@ -43,6 +44,7 @@
     [container registerClass:[CategoryVC class]];
     [container registerClass:[ProductListVC class]];
     [container registerClass:[ProductDetailVC class]];
+    [container registerClass:[CartVC class]];
 }
 
 @end
