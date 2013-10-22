@@ -30,6 +30,8 @@
     NSString* price = [self.product.price valueForKey:@"value"];
     self.prodPrice.text = [formatter stringFromNumber: [NSNumber numberWithDouble:[price doubleValue]]];
     
+    NSLog(@"href: %@", self.product.href);
+    
     // Just show the 1st promo
     if (self.product.promos.count > 0) {
         self.prodPromo.text = ((ProductPromo*)[self.product.promos objectAtIndex:0]).description;

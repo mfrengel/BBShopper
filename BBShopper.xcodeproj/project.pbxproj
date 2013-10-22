@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F01590E18163A6D00C24B1C /* ProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F01590D18163A6D00C24B1C /* ProductDetail.m */; };
+		6F01591218163EF100C24B1C /* ProductVariation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F01591118163EF100C24B1C /* ProductVariation.m */; };
+		6F0159151816436100C24B1C /* ProductAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0159141816436100C24B1C /* ProductAvailability.m */; };
+		6F015918181643CC00C24B1C /* ProductAvailabilityOnline.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F015917181643CC00C24B1C /* ProductAvailabilityOnline.m */; };
 		6F1C587B180CE6B0008D02C2 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C5869180CE6B0008D02C2 /* AFHTTPClient.m */; };
 		6F1C587C180CE6B0008D02C2 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C586B180CE6B0008D02C2 /* AFHTTPRequestOperation.m */; };
 		6F1C587D180CE6B0008D02C2 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C586D180CE6B0008D02C2 /* AFImageRequestOperation.m */; };
@@ -41,6 +45,8 @@
 		6F803541180B949F00738FE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F80353E180B949F00738FE9 /* AppDelegate.m */; };
 		6F803542180B949F00738FE9 /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F803540180B949F00738FE9 /* CategoryVC.m */; };
 		6F803545180B94AD00738FE9 /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F803544180B94AD00738FE9 /* CategoryVC.xib */; };
+		6FA3C466181725080006CFE0 /* ProductAvailabilityForms.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA3C465181725070006CFE0 /* ProductAvailabilityForms.m */; };
+		6FA3C46A181725970006CFE0 /* ProductAvailabilityForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA3C469181725970006CFE0 /* ProductAvailabilityForm.m */; };
 		6FA8C011180BB7EB0072C1F2 /* libCoreMeta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7F619C180BB07C00870B06 /* libCoreMeta.a */; };
 		6FC74DEE180E6D2400C3B61D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DED180E6D2400C3B61D /* Product.m */; };
 		6FC74DF1180E6ED400C3B61D /* ProductPromo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DF0180E6ED400C3B61D /* ProductPromo.m */; };
@@ -90,6 +96,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F01590C18163A6D00C24B1C /* ProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetail.h; sourceTree = "<group>"; };
+		6F01590D18163A6D00C24B1C /* ProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetail.m; sourceTree = "<group>"; };
+		6F01591018163EF100C24B1C /* ProductVariation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductVariation.h; sourceTree = "<group>"; };
+		6F01591118163EF100C24B1C /* ProductVariation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductVariation.m; sourceTree = "<group>"; };
+		6F0159131816436100C24B1C /* ProductAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductAvailability.h; sourceTree = "<group>"; };
+		6F0159141816436100C24B1C /* ProductAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAvailability.m; sourceTree = "<group>"; };
+		6F015916181643CC00C24B1C /* ProductAvailabilityOnline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductAvailabilityOnline.h; sourceTree = "<group>"; };
+		6F015917181643CC00C24B1C /* ProductAvailabilityOnline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAvailabilityOnline.m; sourceTree = "<group>"; };
 		6F1C5868180CE6B0008D02C2 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		6F1C5869180CE6B0008D02C2 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		6F1C586A180CE6B0008D02C2 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -148,6 +162,10 @@
 		6F80353F180B949F00738FE9 /* CategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryVC.h; sourceTree = "<group>"; };
 		6F803540180B949F00738FE9 /* CategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryVC.m; sourceTree = "<group>"; };
 		6F803544180B94AD00738FE9 /* CategoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryVC.xib; sourceTree = "<group>"; };
+		6FA3C464181725070006CFE0 /* ProductAvailabilityForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductAvailabilityForms.h; sourceTree = "<group>"; };
+		6FA3C465181725070006CFE0 /* ProductAvailabilityForms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAvailabilityForms.m; sourceTree = "<group>"; };
+		6FA3C468181725970006CFE0 /* ProductAvailabilityForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductAvailabilityForm.h; sourceTree = "<group>"; };
+		6FA3C469181725970006CFE0 /* ProductAvailabilityForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAvailabilityForm.m; sourceTree = "<group>"; };
 		6FC74DEC180E6D2400C3B61D /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		6FC74DED180E6D2400C3B61D /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		6FC74DEF180E6ED400C3B61D /* ProductPromo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductPromo.h; sourceTree = "<group>"; };
@@ -242,6 +260,18 @@
 				6FC74DF0180E6ED400C3B61D /* ProductPromo.m */,
 				6FC74DF2180E6FA100C3B61D /* ProductImage.h */,
 				6FC74DF3180E6FA100C3B61D /* ProductImage.m */,
+				6F01590C18163A6D00C24B1C /* ProductDetail.h */,
+				6F01590D18163A6D00C24B1C /* ProductDetail.m */,
+				6F01591018163EF100C24B1C /* ProductVariation.h */,
+				6F01591118163EF100C24B1C /* ProductVariation.m */,
+				6F0159131816436100C24B1C /* ProductAvailability.h */,
+				6F0159141816436100C24B1C /* ProductAvailability.m */,
+				6F015916181643CC00C24B1C /* ProductAvailabilityOnline.h */,
+				6F015917181643CC00C24B1C /* ProductAvailabilityOnline.m */,
+				6FA3C464181725070006CFE0 /* ProductAvailabilityForms.h */,
+				6FA3C465181725070006CFE0 /* ProductAvailabilityForms.m */,
+				6FA3C468181725970006CFE0 /* ProductAvailabilityForm.h */,
+				6FA3C469181725970006CFE0 /* ProductAvailabilityForm.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -502,6 +532,12 @@
 				6FC74DFB180E791900C3B61D /* ProductListVC.m in Sources */,
 				6F3A52151810E69000BF5996 /* ProductDetailVC.m in Sources */,
 				6F315AD818162CD300DC0184 /* CartVC.m in Sources */,
+				6F01590E18163A6D00C24B1C /* ProductDetail.m in Sources */,
+				6F01591218163EF100C24B1C /* ProductVariation.m in Sources */,
+				6F0159151816436100C24B1C /* ProductAvailability.m in Sources */,
+				6F015918181643CC00C24B1C /* ProductAvailabilityOnline.m in Sources */,
+				6FA3C466181725080006CFE0 /* ProductAvailabilityForms.m in Sources */,
+				6FA3C46A181725970006CFE0 /* ProductAvailabilityForm.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
