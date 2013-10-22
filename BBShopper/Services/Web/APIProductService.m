@@ -29,4 +29,24 @@
             }];
 }
 
+-(void) getProductDetail:(Product*)product {
+    // TODO: check internet connection, notify of failure if no connection & return
+    
+    AFAppDotNetAPIClient* client = [AFAppDotNetAPIClient sharedClient];
+    [client getPath:product.href
+         parameters:nil
+            success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                //NSLog(@"API RESPONSE: (getProductDetail): %@", responseObject);
+                
+                ProductDetail* prodDetail = [self.serializer create:[ProductDetail class] fromDictionary:responseObject];
+                
+                if (self.delegate)
+                    [self.delegate getProductDetailSuccess:prodDetail];
+            }
+            failure:^(AFHTTPRequestOperation *operation, NSError* error) {
+                if (self.delegate)
+                    [self.delegate getProductDetailFailed: [error localizedDescription]];
+            }];
+}
+
 @end
