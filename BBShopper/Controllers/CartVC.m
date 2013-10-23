@@ -84,6 +84,23 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+-(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 17;
+}
+
+-(UIView*) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UILabel* label = [[UILabel alloc] initWithFrame: CGRectMake(0, 0, tableView.frame.size.width, 25)];
+    label.font = [UIFont systemFontOfSize:15];
+    label.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.7];
+    
+    NSString* sub = [self.cart.summary valueForKey:@"subtotal"];
+    sub = [[self formatter] stringFromNumber: [NSNumber numberWithDouble:[sub doubleValue]]];
+    
+    label.text = [NSString stringWithFormat: @"Subtotal: %@ ", sub];
+                  
+    return label;
+}
+
 #pragma mark - Private Methods
 -(void) checkout:(id)sender {
     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Thank You", nil)
