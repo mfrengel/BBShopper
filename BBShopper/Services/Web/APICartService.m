@@ -7,7 +7,7 @@
 //
 
 #import "APICartService.h"
-#import "AFHTTPRequestOperation.h"
+#import "BBHTTPRequestOperation.h"
 
 @implementation APICartService
 
@@ -25,22 +25,22 @@
     [request setValue: @"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody: [formValue dataUsingEncoding:NSUTF8StringEncoding]];
     
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    [operation setRedirectResponseBlock:^NSURLRequest *(NSURLConnection *connection, NSURLRequest *request, NSURLResponse *redirectResponse) {
-        if (redirectResponse) {
-            NSLog(@"Redirect");
-            
-            NSMutableURLRequest *r = [request mutableCopy]; // original request
-            [r setURL: [request URL]];
-            
-            NSLog(@"redirect headers: %@, url: %@, method: %@", r.allHTTPHeaderFields, r.URL, r.HTTPMethod);
-
-            return r;
-        }
-        else {
-            return request;
-        }
-    }];
+    BBHTTPRequestOperation *operation = [[BBHTTPRequestOperation alloc] initWithRequest:request];
+//    [operation setRedirectResponseBlock:^NSURLRequest *(NSURLConnection *connection, NSURLRequest *request, NSURLResponse *redirectResponse) {
+//        if (redirectResponse) {
+//            NSLog(@"Redirect");
+//            
+//            NSMutableURLRequest *r = [request mutableCopy]; // original request
+//            [r setURL: [request URL]];
+//            
+//            NSLog(@"redirect headers: %@, url: %@, method: %@", r.allHTTPHeaderFields, r.URL, r.HTTPMethod);
+//
+//            return r;
+//        }
+//        else {
+//            return request;
+//        }
+//    }];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Response: %@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);

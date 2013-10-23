@@ -11,6 +11,7 @@
 		6F01591218163EF100C24B1C /* ProductVariation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F01591118163EF100C24B1C /* ProductVariation.m */; };
 		6F0159151816436100C24B1C /* ProductAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0159141816436100C24B1C /* ProductAvailability.m */; };
 		6F015918181643CC00C24B1C /* ProductAvailabilityOnline.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F015917181643CC00C24B1C /* ProductAvailabilityOnline.m */; };
+		6F1C1C4E181875E00017A354 /* BBHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C1C4D181875E00017A354 /* BBHTTPRequestOperation.m */; };
 		6F1C587B180CE6B0008D02C2 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C5869180CE6B0008D02C2 /* AFHTTPClient.m */; };
 		6F1C587C180CE6B0008D02C2 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C586B180CE6B0008D02C2 /* AFHTTPRequestOperation.m */; };
 		6F1C587D180CE6B0008D02C2 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C586D180CE6B0008D02C2 /* AFImageRequestOperation.m */; };
@@ -105,6 +106,8 @@
 		6F0159141816436100C24B1C /* ProductAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAvailability.m; sourceTree = "<group>"; };
 		6F015916181643CC00C24B1C /* ProductAvailabilityOnline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductAvailabilityOnline.h; sourceTree = "<group>"; };
 		6F015917181643CC00C24B1C /* ProductAvailabilityOnline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAvailabilityOnline.m; sourceTree = "<group>"; };
+		6F1C1C4C181875E00017A354 /* BBHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHTTPRequestOperation.h; sourceTree = "<group>"; };
+		6F1C1C4D181875E00017A354 /* BBHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHTTPRequestOperation.m; sourceTree = "<group>"; };
 		6F1C5868180CE6B0008D02C2 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		6F1C5869180CE6B0008D02C2 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		6F1C586A180CE6B0008D02C2 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -233,6 +236,8 @@
 			children = (
 				6F1C588C180CF58E008D02C2 /* AFAppDotNetAPIClient.h */,
 				6F1C588D180CF58E008D02C2 /* AFAppDotNetAPIClient.m */,
+				6F1C1C4C181875E00017A354 /* BBHTTPRequestOperation.h */,
+				6F1C1C4D181875E00017A354 /* BBHTTPRequestOperation.m */,
 				6F24A25D180E319B009B0F80 /* APIBase.h */,
 				6F24A25E180E319B009B0F80 /* APIBase.m */,
 				6F24A260180E32A8009B0F80 /* APICategoryService.h */,
@@ -544,6 +549,7 @@
 				6FA3C466181725080006CFE0 /* ProductAvailabilityForms.m in Sources */,
 				6FA3C46A181725970006CFE0 /* ProductAvailabilityForm.m in Sources */,
 				6FA3C46D181734C50006CFE0 /* APICartService.m in Sources */,
+				6F1C1C4E181875E00017A354 /* BBHTTPRequestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
