@@ -10,10 +10,13 @@
 #import "UIImageView+AFNetworking.h"
 #import "CartVC.h"
 #import "APIProductService.h"
+#import "APICartService.h"
 
-@interface ProductDetailVC()<APIProductServiceDelegate>
+@interface ProductDetailVC()<APIProductServiceDelegate,APICartServiceDelegate>
 
 @property (strong) APIProductService* productAPI;
+@property (strong) APICartService* cartAPI;
+
 @property (strong) ProductDetail* productDetail;
 
 @end
@@ -46,15 +49,9 @@
 }
 
 
-- (IBAction)addToCart:(id)sender {
-    NSLog(@"TODO: Add this item to cart");
-    
-    // TODO:
-    // 1. Call add to cart API
-    // 2. Response to delegate success/fail message
-    // 3. Upon success, show the CartVC
-    
-    [self addToCartSuccess];
+- (IBAction)addToCart:(id)sender {    
+    self.cartAPI.delegate = self;
+    [self.cartAPI addProductToCart:self.product withVariation: [self.productDetail.variations objectAtIndex:0]];
 }
 
 #pragma mark - APIProductServiceDelegate
@@ -76,11 +73,18 @@
                       otherButtonTitles:nil] show];
 }
 
-#pragma mark - Cart delegate
--(void) addToCartSuccess {
+#pragma mark - APICartServiceDelegate
+-(void)addToCartSuccess {
     CartVC* vc = [CartVC object];
     [self.navigationController pushViewController:vc animated:YES];
-    
+}
+
+-(void)addToCartFailed:(NSString *)error {
+    [[[UIAlertView alloc] initWithTitle:@"Add to Cart Failed"
+                                message:error
+                               delegate:nil
+                      cancelButtonTitle:@"Ok"
+                      otherButtonTitles:nil] show];
 }
 
 @end

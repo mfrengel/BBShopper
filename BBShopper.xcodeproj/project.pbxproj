@@ -47,6 +47,7 @@
 		6F803545180B94AD00738FE9 /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F803544180B94AD00738FE9 /* CategoryVC.xib */; };
 		6FA3C466181725080006CFE0 /* ProductAvailabilityForms.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA3C465181725070006CFE0 /* ProductAvailabilityForms.m */; };
 		6FA3C46A181725970006CFE0 /* ProductAvailabilityForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA3C469181725970006CFE0 /* ProductAvailabilityForm.m */; };
+		6FA3C46D181734C50006CFE0 /* APICartService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA3C46C181734C50006CFE0 /* APICartService.m */; };
 		6FA8C011180BB7EB0072C1F2 /* libCoreMeta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7F619C180BB07C00870B06 /* libCoreMeta.a */; };
 		6FC74DEE180E6D2400C3B61D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DED180E6D2400C3B61D /* Product.m */; };
 		6FC74DF1180E6ED400C3B61D /* ProductPromo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC74DF0180E6ED400C3B61D /* ProductPromo.m */; };
@@ -166,6 +167,8 @@
 		6FA3C465181725070006CFE0 /* ProductAvailabilityForms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAvailabilityForms.m; sourceTree = "<group>"; };
 		6FA3C468181725970006CFE0 /* ProductAvailabilityForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductAvailabilityForm.h; sourceTree = "<group>"; };
 		6FA3C469181725970006CFE0 /* ProductAvailabilityForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAvailabilityForm.m; sourceTree = "<group>"; };
+		6FA3C46B181734C40006CFE0 /* APICartService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICartService.h; sourceTree = "<group>"; };
+		6FA3C46C181734C50006CFE0 /* APICartService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICartService.m; sourceTree = "<group>"; };
 		6FC74DEC180E6D2400C3B61D /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		6FC74DED180E6D2400C3B61D /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		6FC74DEF180E6ED400C3B61D /* ProductPromo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductPromo.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 				6F24A261180E32A8009B0F80 /* APICategoryService.m */,
 				6FC74DF5180E722D00C3B61D /* APIProductService.h */,
 				6FC74DF6180E722D00C3B61D /* APIProductService.m */,
+				6FA3C46B181734C40006CFE0 /* APICartService.h */,
+				6FA3C46C181734C50006CFE0 /* APICartService.m */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -538,6 +543,7 @@
 				6F015918181643CC00C24B1C /* ProductAvailabilityOnline.m in Sources */,
 				6FA3C466181725080006CFE0 /* ProductAvailabilityForms.m in Sources */,
 				6FA3C46A181725970006CFE0 /* ProductAvailabilityForm.m in Sources */,
+				6FA3C46D181734C50006CFE0 /* APICartService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

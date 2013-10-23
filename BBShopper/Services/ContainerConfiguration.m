@@ -14,6 +14,7 @@
 #import "AFAppDotNetAPIClient.h"
 #import "APICategoryService.h"
 #import "APIProductService.h"
+#import "APICartService.h"
 
 #import "CategoryRepository.h"
 
@@ -36,6 +37,7 @@
     [container registerClass:[AFAppDotNetAPIClient class]];
     [container registerClass:[APICategoryService class]];
     [container registerClass:[APIProductService class]];
+    [container registerClass:[APICartService class]];
     
     // Repositories
     [container registerClass:[CategoryRepository class] cache:YES];
