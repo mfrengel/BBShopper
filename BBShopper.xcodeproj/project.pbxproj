@@ -12,6 +12,8 @@
 		6F0159151816436100C24B1C /* ProductAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0159141816436100C24B1C /* ProductAvailability.m */; };
 		6F015918181643CC00C24B1C /* ProductAvailabilityOnline.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F015917181643CC00C24B1C /* ProductAvailabilityOnline.m */; };
 		6F1C1C4E181875E00017A354 /* BBHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C1C4D181875E00017A354 /* BBHTTPRequestOperation.m */; };
+		6F1C1C52181879FD0017A354 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C1C51181879FD0017A354 /* Cart.m */; };
+		6F1C1C5518187AC60017A354 /* CartProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C1C5418187AC60017A354 /* CartProduct.m */; };
 		6F1C587B180CE6B0008D02C2 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C5869180CE6B0008D02C2 /* AFHTTPClient.m */; };
 		6F1C587C180CE6B0008D02C2 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C586B180CE6B0008D02C2 /* AFHTTPRequestOperation.m */; };
 		6F1C587D180CE6B0008D02C2 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C586D180CE6B0008D02C2 /* AFImageRequestOperation.m */; };
@@ -108,6 +110,10 @@
 		6F015917181643CC00C24B1C /* ProductAvailabilityOnline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAvailabilityOnline.m; sourceTree = "<group>"; };
 		6F1C1C4C181875E00017A354 /* BBHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHTTPRequestOperation.h; sourceTree = "<group>"; };
 		6F1C1C4D181875E00017A354 /* BBHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHTTPRequestOperation.m; sourceTree = "<group>"; };
+		6F1C1C50181879FD0017A354 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
+		6F1C1C51181879FD0017A354 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
+		6F1C1C5318187AC60017A354 /* CartProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartProduct.h; sourceTree = "<group>"; };
+		6F1C1C5418187AC60017A354 /* CartProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartProduct.m; sourceTree = "<group>"; };
 		6F1C5868180CE6B0008D02C2 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		6F1C5869180CE6B0008D02C2 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		6F1C586A180CE6B0008D02C2 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -262,6 +268,10 @@
 		6F24A263180E36E4009B0F80 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6F1C1C50181879FD0017A354 /* Cart.h */,
+				6F1C1C51181879FD0017A354 /* Cart.m */,
+				6F1C1C5318187AC60017A354 /* CartProduct.h */,
+				6F1C1C5418187AC60017A354 /* CartProduct.m */,
 				6F24A264180E3700009B0F80 /* Category.h */,
 				6F24A265180E3700009B0F80 /* Category.m */,
 				6FC74DEC180E6D2400C3B61D /* Product.h */,
@@ -550,6 +560,8 @@
 				6FA3C46A181725970006CFE0 /* ProductAvailabilityForm.m in Sources */,
 				6FA3C46D181734C50006CFE0 /* APICartService.m in Sources */,
 				6F1C1C4E181875E00017A354 /* BBHTTPRequestOperation.m in Sources */,
+				6F1C1C52181879FD0017A354 /* Cart.m in Sources */,
+				6F1C1C5518187AC60017A354 /* CartProduct.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
