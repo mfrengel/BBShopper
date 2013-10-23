@@ -8,10 +8,11 @@
 
 #import "APIBase.h"
 #import "ProductDetail.h"
+#import "Cart.h"
 
 @protocol APICartServiceDelegate <NSObject>
 @optional
--(void) addToCartSuccess;
+-(void) addToCartSuccess:(Cart*)cart;
 -(void) addToCartFailed:(NSString*)error;
 @end
 

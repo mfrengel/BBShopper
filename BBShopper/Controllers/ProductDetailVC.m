@@ -57,12 +57,6 @@
 #pragma mark - APIProductServiceDelegate
 -(void) getProductDetailSuccess:(ProductDetail*)productDetail {
     self.productDetail = productDetail;
-    
-    NSLog(@"%i variations", productDetail.variations.count);
-    
-    for (ProductVariation* v in productDetail.variations) {
-        NSLog(@"\nMethod: %@, action: %@, id: %@", v.availability.online.forms.add_to_cart.method, v.availability.online.forms.add_to_cart.action, [v.availability.online.forms.add_to_cart.inputs objectForKey:@"id"]);
-    }
 }
 
 -(void) getProductDetailFailed:(NSString *)error {
@@ -74,7 +68,7 @@
 }
 
 #pragma mark - APICartServiceDelegate
--(void)addToCartSuccess {
+-(void)addToCartSuccess:(Cart *)cart {
     CartVC* vc = [CartVC object];
     [self.navigationController pushViewController:vc animated:YES];
 }

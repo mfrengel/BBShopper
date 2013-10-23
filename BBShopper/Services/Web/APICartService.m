@@ -22,13 +22,12 @@
     
     BBHTTPRequestOperation *operation = [[BBHTTPRequestOperation alloc] initWithRequest:request];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Response: %@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
-       
-        if (self.delegate)
-            [self.delegate addToCartSuccess];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-       NSLog(@"Error: %@", error);
+        NSString* str = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+        Cart* cart = [self.serializer create:[Cart class] fromString: str];
         
+        if (self.delegate)
+            [self.delegate addToCartSuccess:cart];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (self.delegate)
             [self.delegate addToCartFailed: [error localizedDescription]];
     }];
