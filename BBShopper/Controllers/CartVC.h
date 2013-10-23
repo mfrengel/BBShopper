@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Cart.h"
 
 @interface CartVC : UIViewController
 
-
+@property (strong) Cart* cart;
 
 @end

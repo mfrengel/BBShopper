@@ -7,6 +7,7 @@
 //
 
 #import "CartVC.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface CartVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -32,7 +33,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.cart.products.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -41,7 +42,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.accessoryType = UITableViewCellAccessoryNone;
         
         cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:15];
         cell.textLabel.textColor = [UIColor darkTextColor];
@@ -49,7 +50,32 @@
         cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
         cell.detailTextLabel.textColor = [UIColor blueColor];
     }
+    
+    CartProduct* prod = [self.cart.products objectAtIndex:indexPath.row];
+    
+    __weak typeof(UITableViewCell*) weakCell = cell;
+    NSURL* url = [NSURL URLWithString:prod.image];
+    [cell.imageView setImageWithURLRequest:[NSURLRequest requestWithURL:url]
+                          placeholderImage:[UIImage imageNamed:@"profile-image-placeholder.png"]
+                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                       weakCell.imageView.image = image;
+                                       [weakCell layoutSubviews];
+                                   }
+                                   failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+                                       return;
+                                   }
+     ];
+    
+    cell.textLabel.text = prod.title;
+    
 
+    NSString* price = [prod.price valueForKey:@"per_item"];
+    price = [[self formatter] stringFromNumber: [NSNumber numberWithDouble:[price doubleValue]]];
+    
+    NSString* total = [prod.price valueForKey:@"for_all"];
+    total = [[self formatter] stringFromNumber: [NSNumber numberWithDouble:[total doubleValue]]];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Qty %i, %@, Total: %@", [prod.quantity intValue], price, total];
     
     return cell;
 }
@@ -60,8 +86,17 @@
 
 #pragma mark - Private Methods
 -(void) checkout:(id)sender {
-    NSLog(@"Proceed to checkout!");
+    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Thank You", nil)
+                                message:NSLocalizedString(@"Thanks for your order.\nFrom here we could proceed to checkout.\nThat's all for now.", nil)
+                               delegate:nil
+                      cancelButtonTitle:@"Ok"
+                      otherButtonTitles:nil] show];
 }
 
+-(NSNumberFormatter*) formatter {
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    return formatter;
+}
 
 @end

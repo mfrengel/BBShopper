@@ -70,6 +70,7 @@
 #pragma mark - APICartServiceDelegate
 -(void)addToCartSuccess:(Cart *)cart {
     CartVC* vc = [CartVC object];
+    vc.cart = cart;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
