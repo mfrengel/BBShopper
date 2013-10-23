@@ -23,8 +23,7 @@
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString: variation.availability.online.forms.add_to_cart.action relativeToURL: client.baseURL]];
     [request setHTTPMethod:@"POST"];
     [request setValue: @"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    [request setValue: @"0" forHTTPHeaderField:@"Content-Length"];
-    [request setValue: formValue forHTTPHeaderField:@"form"];
+    [request setHTTPBody: [formValue dataUsingEncoding:NSUTF8StringEncoding]];
     
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [operation setRedirectResponseBlock:^NSURLRequest *(NSURLConnection *connection, NSURLRequest *request, NSURLResponse *redirectResponse) {
