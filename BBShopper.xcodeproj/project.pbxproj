@@ -24,7 +24,7 @@
 		6F1C5886180CE72E008D02C2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1C5885180CE72E008D02C2 /* MobileCoreServices.framework */; };
 		6F1C5888180CE753008D02C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1C5887180CE753008D02C2 /* SystemConfiguration.framework */; };
 		6F1C588A180CE8A3008D02C2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1C5889180CE8A3008D02C2 /* Security.framework */; };
-		6F1C588E180CF58E008D02C2 /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C588D180CF58E008D02C2 /* AFAppDotNetAPIClient.m */; };
+		6F1C588E180CF58E008D02C2 /* BBAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C588D180CF58E008D02C2 /* BBAPIClient.m */; };
 		6F24A25C180E2F26009B0F80 /* CategoryRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24A25B180E2F26009B0F80 /* CategoryRepository.m */; };
 		6F24A25F180E319B009B0F80 /* APIBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24A25E180E319B009B0F80 /* APIBase.m */; };
 		6F24A262180E32A8009B0F80 /* APICategoryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24A261180E32A8009B0F80 /* APICategoryService.m */; };
@@ -130,8 +130,8 @@
 		6F1C5885180CE72E008D02C2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6F1C5887180CE753008D02C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6F1C5889180CE8A3008D02C2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		6F1C588C180CF58E008D02C2 /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
-		6F1C588D180CF58E008D02C2 /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		6F1C588C180CF58E008D02C2 /* BBAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAPIClient.h; sourceTree = "<group>"; };
+		6F1C588D180CF58E008D02C2 /* BBAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAPIClient.m; sourceTree = "<group>"; };
 		6F24A25A180E2F26009B0F80 /* CategoryRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryRepository.h; sourceTree = "<group>"; };
 		6F24A25B180E2F26009B0F80 /* CategoryRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryRepository.m; sourceTree = "<group>"; };
 		6F24A25D180E319B009B0F80 /* APIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIBase.h; sourceTree = "<group>"; };
@@ -234,8 +234,8 @@
 		6F1C588B180CF58E008D02C2 /* Web */ = {
 			isa = PBXGroup;
 			children = (
-				6F1C588C180CF58E008D02C2 /* AFAppDotNetAPIClient.h */,
-				6F1C588D180CF58E008D02C2 /* AFAppDotNetAPIClient.m */,
+				6F1C588C180CF58E008D02C2 /* BBAPIClient.h */,
+				6F1C588D180CF58E008D02C2 /* BBAPIClient.m */,
 				6F1C1C4C181875E00017A354 /* BBHTTPRequestOperation.h */,
 				6F1C1C4D181875E00017A354 /* BBHTTPRequestOperation.m */,
 				6F24A25D180E319B009B0F80 /* APIBase.h */,
@@ -530,7 +530,7 @@
 				6F1C5881180CE6B0008D02C2 /* AFURLConnectionOperation.m in Sources */,
 				6F1C5882180CE6B0008D02C2 /* AFXMLRequestOperation.m in Sources */,
 				6F1C5883180CE6B0008D02C2 /* UIImageView+AFNetworking.m in Sources */,
-				6F1C588E180CF58E008D02C2 /* AFAppDotNetAPIClient.m in Sources */,
+				6F1C588E180CF58E008D02C2 /* BBAPIClient.m in Sources */,
 				6F24A25C180E2F26009B0F80 /* CategoryRepository.m in Sources */,
 				6F24A25F180E319B009B0F80 /* APIBase.m in Sources */,
 				6F24A262180E32A8009B0F80 /* APICategoryService.m in Sources */,

@@ -11,7 +11,7 @@
 #import "IdiomContainerConvention.h"
 
 #import "JsonCerealizer.h"
-#import "AFAppDotNetAPIClient.h"
+#import "BBAPIClient.h"
 #import "APICategoryService.h"
 #import "APIProductService.h"
 #import "APICartService.h"
@@ -34,7 +34,7 @@
     [container registerClass:[JsonCerealizer class] forProtocol:@protocol(Cerealizable)];
     [container registerClass:[JsonCerealizer class]];
     
-    [container registerClass:[AFAppDotNetAPIClient class]];
+    [container registerClass:[BBAPIClient class]];
     [container registerClass:[APICategoryService class]];
     [container registerClass:[APIProductService class]];
     [container registerClass:[APICartService class]];

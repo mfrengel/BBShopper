@@ -23,8 +23,8 @@
 #import <Foundation/Foundation.h>
 #import "AFHTTPClient.h"
 
-@interface AFAppDotNetAPIClient : AFHTTPClient
+@interface BBAPIClient : AFHTTPClient
 
-+ (AFAppDotNetAPIClient *)sharedClient;
++ (BBAPIClient *)sharedClient;
 
 @end

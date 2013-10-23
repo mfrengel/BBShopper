@@ -22,7 +22,7 @@
 -(void) loadCategories {
     // TODO: check internet connection, notify of failure if no connection & return
     
-    AFAppDotNetAPIClient* client = [AFAppDotNetAPIClient sharedClient];
+    BBAPIClient* client = [BBAPIClient sharedClient];
     [client getPath:@"categories"
          parameters:nil
             success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -45,7 +45,7 @@
 -(void) loadSubCategories:(Category*)category {
     // TODO: check internet connection, notify of failure if no connection & return
     
-    AFAppDotNetAPIClient* client = [AFAppDotNetAPIClient sharedClient];
+    BBAPIClient* client = [BBAPIClient sharedClient];
     [client getPath:category.href
          parameters:nil
             success:^(AFHTTPRequestOperation *operation, id responseObject) {

@@ -13,7 +13,7 @@
 -(void) loadProductsForCategory:(Category*)category {
     // TODO: check internet connection, notify of failure if no connection & return
     
-    AFAppDotNetAPIClient* client = [AFAppDotNetAPIClient sharedClient];
+    BBAPIClient* client = [BBAPIClient sharedClient];
     [client getPath:category.href
          parameters:nil
             success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -32,7 +32,7 @@
 -(void) getProductDetail:(Product*)product {
     // TODO: check internet connection, notify of failure if no connection & return
     
-    AFAppDotNetAPIClient* client = [AFAppDotNetAPIClient sharedClient];
+    BBAPIClient* client = [BBAPIClient sharedClient];
     [client getPath:product.href
          parameters:nil
             success:^(AFHTTPRequestOperation *operation, id responseObject) {

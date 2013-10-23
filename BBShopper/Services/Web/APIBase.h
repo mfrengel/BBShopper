@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFAppDotNetAPIClient.h"
+#import "BBAPIClient.h"
 #import "JsonCerealizer.h"
 
 @interface APIBase : NSObject

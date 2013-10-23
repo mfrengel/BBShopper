@@ -20,19 +20,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "AFAppDotNetAPIClient.h"
+#import "BBAPIClient.h"
 
 #import "AFJSONRequestOperation.h"
 
 static NSString* const kAFAppDotNetAPIBaseURLString = @"https://emsapi.bbhosted.com/";
 
-@implementation AFAppDotNetAPIClient
+@implementation BBAPIClient
 
-+ (AFAppDotNetAPIClient *)sharedClient {
-    static AFAppDotNetAPIClient *_sharedClient = nil;
++ (BBAPIClient *)sharedClient {
+    static BBAPIClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[AFAppDotNetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:kAFAppDotNetAPIBaseURLString]];
+        _sharedClient = [[BBAPIClient alloc] initWithBaseURL:[NSURL URLWithString:kAFAppDotNetAPIBaseURLString]];
     });
     
     return _sharedClient;

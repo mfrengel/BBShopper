@@ -14,7 +14,7 @@
 -(void) addProductToCart:(Product*)product withVariation:(ProductVariation*)variation {
     // TODO: check internet connection, notify of failure if no connection & return
     
-    AFAppDotNetAPIClient* client = [AFAppDotNetAPIClient sharedClient];
+    BBAPIClient* client = [BBAPIClient sharedClient];
     [client setParameterEncoding:AFFormURLParameterEncoding];
 
     NSString* formValue = [NSString stringWithFormat:@"id=%@&qty=1", [variation.availability.online.forms.add_to_cart.inputs objectForKey:@"id"]];
