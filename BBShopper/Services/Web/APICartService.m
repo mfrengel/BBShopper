@@ -17,23 +17,25 @@
     AFAppDotNetAPIClient* client = [AFAppDotNetAPIClient sharedClient];
     [client setParameterEncoding:AFFormURLParameterEncoding];
 
-    NSString* formValue = [NSString stringWithFormat:@"%@&qty=1", [variation.availability.online.forms.add_to_cart.inputs objectForKey:@"id"]];
+    NSString* formValue = [NSString stringWithFormat:@"id=%@&qty=1", [variation.availability.online.forms.add_to_cart.inputs objectForKey:@"id"]];
     formValue = [formValue stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
-    
+  
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString: variation.availability.online.forms.add_to_cart.action relativeToURL: client.baseURL]];
     [request setHTTPMethod:@"POST"];
-    [request setValue: @"application/x-www-form-urlencoded" forHTTPHeaderField:@"content-type"];
-    [request setValue: @"0" forHTTPHeaderField:@"content-length"];
-
+    [request setValue: @"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setValue: @"0" forHTTPHeaderField:@"Content-Length"];
     [request setValue: formValue forHTTPHeaderField:@"form"];
     
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [operation setRedirectResponseBlock:^NSURLRequest *(NSURLConnection *connection, NSURLRequest *request, NSURLResponse *redirectResponse) {
-        NSLog(@"Redirect");
-        
         if (redirectResponse) {
+            NSLog(@"Redirect");
+            
             NSMutableURLRequest *r = [request mutableCopy]; // original request
             [r setURL: [request URL]];
+            
+            NSLog(@"redirect headers: %@, url: %@, method: %@", r.allHTTPHeaderFields, r.URL, r.HTTPMethod);
+
             return r;
         }
         else {
